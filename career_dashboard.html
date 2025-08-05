@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Dashboard - Arjun</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #eef2f3, #dbe6f6);
+            padding: 8px;
+            color: #2d3436;
+            margin: 0;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1a5276;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 14px;
+            color: #1a5276;
+            margin-bottom: 9px;
+            margin-top: 1px;
+        }
+        .link {
+            display: block;
+            font-size: 13px;
+            margin: 4px 0;
+            font-weight: 500;
+            color: #2f80ed;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .tip-card {
+            background: linear-gradient(to right, #d0e8ff, #f0f8ff);
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            border-radius: 8px;
+            margin-bottom: 6px;
+            font-style: italic;
+            font-size: 13px;
+        }
+        .panel {
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+            margin-bottom: 6px;
+            transition: 0.3s ease;
+        }
+        .panel:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .panel-blue { background: #e8f4fc; }
+        .panel-green { background: #eafaf1; }
+        .panel-yellow { background: #fffbea; }
+        .panel-purple { background: #f2ecff; }
+        .panel-pink { background: #fdeefc; }
+        .panel-grey { background: #f5f7fa; }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1px;
+        }
+        .row > .panel {
+            flex: 1;
+            min-width: 0;
+        }
+        .badge {
+            background-color: #d1f7dc;
+            padding: 5px 8px;
+            border-radius: 6px;
+            color: #218c74;
+            font-weight: 500;
+            font-size: 12.5px;
+            display: inline-block;
+        }
+        .bar-container {
+            background-color: #f1f1f1;
+            border-radius: 16px;
+            width: 100%;
+            height: 10px;
+            margin: 6px 0;
+        }
+        .bar {
+            width: 82%;
+            height: 100%;
+            background: linear-gradient(to right, #00c6ff,rgba(0, 115, 255, 0.78));
+            border-radius: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ccc, transparent);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Arjun!</h1>
+        
+        <hr>
+        
+        <div class="tip-card">
+            🔄 <strong>Daily Career Boost</strong><br>
+            "Keep your resume layout clean recruiters scan in under 7 seconds."<br>
+        </div>
+
+        <div class="panel panel-blue">
+            <h2>🚀 Launchpad</h2>
+            <a class="link" href="#">1:1 Mentorship → Coming Soon</a>
+            <a class="link" href="#">Explore Career Paths → Coming Soon</a>
+            <a class="link" href="#">Career Quiz → Coming Soon</a>    
+            <a class="link" href="#">Mock Interviews & GD's → Coming Soon</a>
+        </div>
+
+        <div class="row">
+            <div class="panel panel-yellow">
+                <h2>💼 Internships</h2>
+                <a class="link" href="#">Profiles → Coming Soon</a>  
+                <a class="link" href="#">Webinars → Coming Soon</a>
+            </div>
+            <div class="panel panel-green">
+                <h2>📝 Resume</h2>
+                ATS Score: <strong>8.2/10</strong>
+                <div class="bar-container"><div class="bar"></div></div>
+                🎯 Goals: <strong>3/5</strong>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel panel-purple">
+                <h2>📚 Upskill</h2>
+                <a class="link" href="#">PM Prep → Coming Soon</a>  
+                <a class="link" href="#">Video Library → Coming Soon</a>
+            </div>
+            <div class="panel panel-grey">
+                <h2>🔮 Mentor's Corner</h2>
+                "Don't just build a resume, build a story."  
+                <a class="link" href="#">Ask Mentor → Coming Soon</a>
+            </div>
+        </div>
+        
+        <div class="panel panel-green">
+            <h2>🏆 Achievements</h2>
+            🥇 <span class="badge">Profile 80%</span><br>
+            🎓 <span class="badge">PM Cert: Ongoing</span>
+        </div>
+
+        <hr>
+    </div>
+</body>
+</html>
