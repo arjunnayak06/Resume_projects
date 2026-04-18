@@ -235,7 +235,8 @@ def ingest(scrape: bool = False) -> tuple[pd.DataFrame, pd.DataFrame]:
             "Value": "Estimated_Value_INR",
             "Estimated Value": "Estimated_Value_INR",
         }
-        sheet_df = sheet_df.rename(columns={k: v for k, v in col_map.items() if k in sheet_df.columns})
+        rename_map = {k: v for k, v in col_map.items() if k in sheet_df.columns}
+        sheet_df = sheet_df.rename(columns=rename_map)
 
         # Build bidders table from Bidder_List column
         if "Bidder_List" not in sheet_df.columns:

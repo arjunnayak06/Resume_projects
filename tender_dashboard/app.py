@@ -449,9 +449,13 @@ with tab_bidders:
     from data_model import build_repeat_winners
     rw = build_repeat_winners(b_filt)
     if not rw.empty:
+        styled_rw = (
+            rw.style
+            .background_gradient(subset=["Total_Wins"], cmap="Greens")
+            .background_gradient(subset=["Win_Rate_Pct"], cmap="Blues")
+        )
         st.dataframe(
-            rw.style.background_gradient(subset=["Total_Wins"], cmap="Greens")
-                    .background_gradient(subset=["Win_Rate_Pct"], cmap="Blues"),
+            styled_rw,
             use_container_width=True,
             height=350,
         )
